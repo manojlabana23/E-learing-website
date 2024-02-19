@@ -1,0 +1,242 @@
+ <?php
+//include auth_session.php file on all user panel pages
+include("auth_session.php");
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>E-Learning Website</title>
+	<style >
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(img2.jfif);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.head{
+	height: 50%;
+	width: 15%;
+	position: relative;
+	top: 0%;
+	left: 10%;
+}
+
+form.example input[type=text] {
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 72%;
+  background: #f1f1f1;
+  position: relative;
+  top: 6px;
+  left: 75%;
+}
+
+form.example button {i
+  float: left;
+  width: 20%;
+  padding: 8px;
+  background: #2196F3;
+  color: black;
+  font-size: 17px;
+  border: 1px solid grey;
+  cursor: pointer;
+  position: relative;
+  top: 6px;
+  left: 75%;
+
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.line1{
+	color: white;
+	height: 50%;
+	width: 10%;
+	position: relative;
+	top: 0%;
+	right:-1%;
+	font-size: 17px;	
+}
+
+.line3{
+	 border-bottom: 6px solid black;
+	 background-image: url(img1.jfif) ;
+}
+
+.chips-wrapper{
+	overflow-x:scroll;
+	background-color: #181818;
+	display:flex;
+}
+.chips-wrapper::-webkit-scrollbar{
+	height: 0;
+}
+.chip{
+	margin: 12px 6px;
+	background-color: #373737;
+	padding: 6px 12px;
+	border: 1px solid rgba(225, 255, 255, 0.1);
+	white-space: nowrap;
+	border-radius: 16px;
+	cursor: pointer;
+	color: #fff;
+	transition:  .5s;
+		text-color: white;
+	text-decoration: none;
+}
+
+.example {
+  margin: 1em 0;
+}
+
+.example img {
+  width: 30vw;
+  height: 20vw;
+}
+
+.example-cover img {
+  object-fit: cover;
+}
+
+.example-contain img {
+  object-fit: contain;
+}
+
+.log{
+	color:white;
+	height: 50%;
+	width: 4%;
+	position: relative;
+	top: 20%;
+	right:5%;
+	font-size:18px;	
+}
+.line8{
+	text-decoration: none;
+	color: white;
+}
+
+.dropbtn {
+  background-color: #1f2c34;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #1f2c34;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+	</style>
+</head>
+<body>
+		<section class="header">
+		<table class="line3" border="0" width="100%">
+			<tr>
+				<td>
+					<img class="head" src="education.jpg">
+				</td>
+				<td>
+				    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                     <input type="text" placeholder="Search.." name="search2">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+				</td>
+				<td class="line1"><div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-circle-user"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+            <a href="profile.php">My Profile</a>
+            <a href="logout.php">Logout</a>
+          </div>
+         </div>
+     </td>
+				
+		</table>
+		<div>
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/QFaFIcGhPoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/QFaFIcGhPoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/9VIiLJL0H4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/9VIiLJL0H4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/Y2hgEGPzTZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/lnV34uLEzis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		</div>
+		</section>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+
+</html>
